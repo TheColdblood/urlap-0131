@@ -1,0 +1,9 @@
+
+input{
+    margin: 5px;
+}
+
+.kotelezo label::after{
+    content: "*";
+    color: red;
+}

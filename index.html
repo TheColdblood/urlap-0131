@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlap gyakorlás</title>
+    <link rel="stylesheet" href="stilus.css">
+</head>
+<body>
+    <form action="#" method="get">
+        <fieldset>
+            <!--kereten lévő szöveg-->
+            <legend>Regisztráció</legend>
+
+            <!-- label form és input id egyezzen meg -->
+            <label for="user" class="kotelezo">Felhasználónév:</label>
+            <input type="text" id="user" name="nev" placeholder="csak ékezetmentes betűk" size="20" required>
+            <br>
+            
+            <label for="passw" class="kotelezo">Jelszó:</label>
+            <input type="text" id="passw" name="jelszo" placeholder="min. 3 karakter" size="20" required>
+            <br>
+
+            <label for="email" class="kotelezo">E-mail cím:</label>
+            <input type="email" id="email" name="e-mail cim" placeholder="vmi@vmi.hu" size="20" required>
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Születés</legend>
+            
+            <label for="dob">Születési dátum:</label>
+            <input type="date" id="dob" name="szuletesi datum">
+            <br>
+
+            <fieldset>
+                <legend>Személyes</legend>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="eng" name="angol" value="Angol">
+                    <label for="eng">Angol</label>
+                    <br>
+
+                    <input type="checkbox" id="ger" name="german" value="Német">
+                    <label for="ger">Német</label>
+                    <br>
+                </div>
+
+                <div class="select">
+                    <label for="szak">Választott szak:</label>
+                    <select name="szak" id="szakok">
+                    <option value="SZF">Szoftverfejlesztő</option>
+                    <option value="IRU">Rendszergazda</option>
+                    <option value="GRAF">Grafikus</option>
+                    <option value="FOT">Fotós</option>
+  </select>
+                </div>
+
+                <div class="radio">
+                    <input type="radio" id="male" name="ferfi" value="Férfi">
+                    <label for="male">Férfi</label>
+                    <br>
+
+                    <input type="radio" id="female" name="no" value="Nő">
+                    <label for="female">Nő</label>
+                    <br>
+                </div>
+            </fieldset>
+        </fieldset>
+    
+        <input type="submit" value="Regisztráció">
+
+</body>
+</html>
